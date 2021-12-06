@@ -33,7 +33,7 @@
 
     /* Aquí la parte 2 */
     header{
-        margin-top: 150px;
+        margin-top: 130px;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -208,8 +208,8 @@
         font-weight: bold;
         justify-content: space-around;
         padding-left: 0px;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
         text-align: center;
     }
     .final{
@@ -220,8 +220,8 @@
         justify-items: center;
         justify-content: space-around;
         align-items: center;
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 28%;
+        margin-right: 28%;
         padding-top: 0.8em;
         text-align: center;
     }
@@ -239,8 +239,8 @@
         justify-content: space-between;
         justify-items: center;
         align-items: center;
-        margin-left: 40%;
-        margin-right: 40%;
+        margin-left: 37%;
+        margin-right: 37%;
         color: #5b5e6d;
         padding-top: 1.3em;
         padding-bottom: 1em;
