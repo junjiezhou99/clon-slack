@@ -2,16 +2,17 @@
     nav{
         display: flex;
         justify-content: space-between;
-        padding: 10px;
-        border-bottom: 1px solid black;
+        align-items: center;
+        padding: 0px 10px;
+        border-bottom: 1px solid #dfdfdf;
         position: fixed;
         top: 0;
         width: 100%;
         background-color: white;
     }
     nav img{
-        width: 180px;
-        height: 90px;
+        width: 140px;
+        height: 70px;
         padding-left: 5%;
     }
     nav ul{
@@ -21,42 +22,50 @@
         display: none;
     }
     .fa-bars{
-        font-size: 50px;
-        align-self: center;
+        font-size: 40px;
         color: gray;
         margin: 20px;
         padding-right: 5%;
+    }
+    body{
+        margin: 0px;
     }
 
     /* Aquí la parte 2 */
     header{
         margin-top: 150px;
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     header h1{
         font-size: 4em;
         line-height: 55px;
     }
     header p{
-        font-size: 2em;
+        font-size: 1.8em;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         line-height: 35px;
-        color: grey;
+        color: #5b5e6d;
     }
     header input{
-        width: 91%;
-        padding: 4% 4%;
         margin-top: 4%;
+        padding: 5% 4%;
+        border: 2px solid #f4f3f4;
+        width: 91%;
         border-radius: 5px;
+    }
+    header input::placeholder{
+        font-size: 1.5em;
     }
     header button{
         width: 100%;
         margin-top: 4%;
         border-radius: 5px;
-        padding: 4%;
+        padding: 5%;
         background-color: #192592;
         color: white;
+        font-weight: bold;
+        font-size: 1em;
     }
     header .already{
         text-align: center;
@@ -64,33 +73,38 @@
     }
     header img{
         width: 100%;
-        margin: 8% 0px;
+        margin: 0px;
     }
 
     /* Aquí la parte 3 */
     main{
-        margin-left: 25px;
-        margin-right: 25px;
+        border-bottom: 1px solid #dfdfdf;
+    }
+    .background{
+        background-color: #F4F3F4;
+        border-top: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
     }
     main .gray{
-        background-color: #F4F3F4;
+        margin-left: 10%;
+        margin-right: 10%;
     }
-    main h2{
+    .gray h2{
         text-align: center;
-        font-size: 3em;
+        font-size: 2.5em;
         color: rgb(26, 28, 31);
         margin: 0 0 15px 0;
-
+        padding-top: 15%;
     }
-    main .million{
-        font-size: 2em;
+    .gray .million{
+        font-size: 1.7em;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         line-height: 35px;
         color: grey;
         text-align: center;
         margin: 0;
     }
-    main button{
+    .gray button{
         width: 100%;
         margin: 8% 0px;
         border-radius: 5px;
@@ -99,11 +113,13 @@
         color: #192592;
         font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: bold;
+        font-size: 1.2em;
     }
     .gray .grid{
+        margin-top: 8%;
+        padding-bottom: 15%;
         display: grid;
         grid-template-rows: repeat(6, 110px);
-        /* width: 200px; */
     }
     .gray .grid img{
         display: flex;
@@ -112,19 +128,122 @@
         width: 50%;
         height: auto;
     }
+    .gray2{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
     .gray2 .try{
         text-align: center;
         font-family: 'Times New Roman', Times, serif;        
         font-weight: bold;
         font-size: 2em;
         margin: 0;
-        margin-top: 40px;
+        padding-top: 40px;
     }
     .gray2 .already{
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.5em;
         margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .gray2 input{
+        width: 91%;
+        padding: 5% 4%;
+        margin-top: 4%;
+        border-radius: 5px;
+        border: 2px solid #f4f3f4;
+    }
+    .gray2 input::placeholder{
+        font-size: 1.5em;
+    }
+    .gray2 button{
+        width: 100%;
+        margin: 30px 0px;
+        margin-bottom: 13%;
+        border-radius: 5px;
+        padding: 4%;
+        background-color: #192592;
+        color: white;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1em;
+    }
 
+    /* Aquí la parte 4 */
+    .foot{
+        display: grid;
+        grid-template-areas: 
+        "img img"
+        "fr fr"
+        "fr fr";
+    }
+    .foot img{
+        grid-area: img;
+        width: 7em;
+    }
+    .foot ul li:first-child{
+        font-weight: bold;
+    }
+    .foot ul li{
+        list-style: none;
+        line-height: 45px;
+    }
+    .foot{
+        grid-area: fr;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1.1em;
+    }
+    .last{
+        display: grid;
+        background-color: #F4F3F4;
+    }
+    .last ul{
+        list-style: none;
+        display: flex;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1.1em;
+        font-weight: bold;
+        justify-content: space-around;
+        padding-left: 0px;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+    }
+    .final{
+        display: grid;
+    }
+    .final1{
+        display: flex;
+        justify-items: center;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding-top: 0.8em;
+        text-align: center;
+    }
+    .final1 img{
+        width: 1.8em;
+    }
+    .final1 span{
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    .final2{
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        margin-left: 40%;
+        margin-right: 40%;
+        color: #5b5e6d;
+        padding-top: 1.3em;
+        padding-bottom: 1em;
+        font-size: 1.3em;
     }
 }
