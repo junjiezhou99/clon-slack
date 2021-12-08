@@ -30,8 +30,6 @@
     body{
         margin: 0px;
     }
-
-    /* Aquí la parte 2 */
     header{
         margin-top: 130px;
         margin-left: 10%;
@@ -245,5 +243,845 @@
         padding-top: 1.3em;
         padding-bottom: 1em;
         font-size: 1.3em;
+    }
+}
+
+/* Segunda medida de pantalla */
+
+@media (min-width: 767px) and (max-width: 961px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        border-bottom: 1px solid #dfdfdf;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+    }
+    nav img{
+        width: 140px;
+        height: 70px;
+        padding-left: 5%;
+    }
+    nav ul{
+        display: none;
+    }
+    .fa-times{
+        display: none;
+    }
+    .fa-bars{
+        font-size: 40px;
+        color: gray;
+        margin: 20px;
+        padding-right: 5%;
+    }
+    body{
+        margin: 0px;
+    }
+    header{
+        margin-top: 130px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    header h1{
+        font-size: 4em;
+        line-height: 55px;
+    }
+    header p{
+        font-size: 1.8em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 35px;
+        color: #5b5e6d;
+    }
+    header input{
+        margin-top: 4%;
+        padding: 25px 20px;
+        border: 2px solid #f4f3f4;
+        width: 50%;
+        border-radius: 5px;
+    }
+    header input::placeholder{
+        font-size: 1.5em;
+    }
+    header button{
+        width: 30%;
+        margin-top: 4%;
+        border-radius: 5px;
+        padding: 24px;
+        background-color: #192592;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    header .already{
+        font-size: 1.5em;
+    }
+    header img{
+        width: 100%;
+        margin: 0px;
+    }
+
+    /* Aquí la parte 3 */
+    main{
+        border-bottom: 1px solid #dfdfdf;
+    }
+    .background{
+        background-color: #F4F3F4;
+        border-top: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+    }
+    main .gray{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .gray h2{
+        text-align: center;
+        font-size: 2.5em;
+        color: rgb(26, 28, 31);
+        margin: 0 0 15px 0;
+        padding-top: 10%;
+    }
+    .gray .million{
+        font-size: 1.4em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 35px;
+        color: grey;
+        text-align: center;
+        margin: 0;
+    }
+    .gray button{
+        width: 40%;
+        margin: 5% 30%;
+        border-radius: 5px;
+        padding: 24px;
+        background-color: white;
+        color: #192592;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .gray .grid{
+        margin-top: 0%;
+        padding-bottom: 6%;
+        display: grid;
+        grid-template-rows: repeat(3, 150px);
+        grid-template-columns: repeat(2, auto);
+    }
+    .gray .grid img{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 70%;
+        height: auto;
+    }
+    .gray2{
+        margin: 5% 30px;
+        display: grid;
+        grid-template-areas: 
+        "try try input button"
+        "already already input button";
+    }
+    .gray2 .try{
+        grid-area: try;
+        display: flex;
+        align-items: flex-end;
+    }
+    .gray2 .already{
+        grid-area: already;
+        display: flex;
+        align-items: flex-start;
+    }
+    .gray2 input{
+        grid-area: input;
+        display: flex;
+        align-items: center;
+        margin: 18% 6%;
+        padding-left: 5%;
+    }
+    .gray2 button{
+        grid-area: button;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 18% 6%;
+    }
+    .gray2 .try{
+        font-family: 'Times New Roman', Times, serif;        
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0;
+    }
+    .gray2 .already{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .gray2 input{
+        width: auto;
+        border-radius: 5px;
+        border: 2px solid #f4f3f4;
+    }
+    .gray2 input::placeholder{
+        font-size: 1.5em;
+    }
+    .gray2 button{
+        width: auto;
+        padding: 24px;
+        border-radius: 5px;
+        background-color: #192592;
+        color: white;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    /* Aquí la parte 4 */
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 3% 0px;
+    }
+    .foot img{
+        width: 7em;
+    }
+    .foot ul{
+        padding: 0px;
+    }
+    .item1{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .foot ul li:first-child{
+        font-weight: bold;
+    }
+    .foot ul li{
+        list-style: none;
+        line-height: 45px;
+    }
+    .foot{
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1.1em;
+    }
+
+    .last{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: #F4F3F4;
+        padding: 2% 0px;
+    }
+    .last ul{
+        grid-column: 1/3;
+        list-style: none;
+        display: flex;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1em;
+        font-weight: bold;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .final{
+        grid-column: 4/6;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .final1{
+        display: flex;
+        justify-items: center;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .final1 img{
+        width: 1.8em;
+    }
+    .final1 span{
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .final2{
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #5b5e6d;
+        font-size: 1em;
+    }
+}
+
+/* Tercera pantalla */
+
+@media (min-width: 960px) and (max-width: 1024px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        border-bottom: 1px solid #dfdfdf;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+    }
+    nav img{
+        width: 140px;
+        height: 70px;
+        padding-left: 5%;
+    }
+    nav ul{
+        display: none;
+    }
+    .fa-times{
+        display: none;
+    }
+    .fa-bars{
+        font-size: 40px;
+        color: gray;
+        margin: 20px;
+        padding-right: 5%;
+    }
+    body{
+        margin: 0px;
+    }
+    header{
+        margin-top: 130px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    header h1{
+        font-size: 4em;
+        line-height: 55px;
+    }
+    header p{
+        font-size: 1.8em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 35px;
+        color: #5b5e6d;
+    }
+    header input{
+        margin-top: 4%;
+        padding: 25px 20px;
+        border: 2px solid #f4f3f4;
+        width: 50%;
+        border-radius: 5px;
+    }
+    header input::placeholder{
+        font-size: 1.5em;
+    }
+    header button{
+        width: 30%;
+        margin-top: 4%;
+        border-radius: 5px;
+        padding: 24px;
+        background-color: #192592;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    header .already{
+        font-size: 1.5em;
+    }
+    header img{
+        width: 100%;
+        margin: 0px;
+    }
+
+    /* Aquí la parte 3 */
+    main{
+        border-bottom: 1px solid #dfdfdf;
+    }
+    .background{
+        background-color: #F4F3F4;
+        border-top: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+    }
+    main .gray{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .gray h2{
+        text-align: center;
+        font-size: 2.5em;
+        color: rgb(26, 28, 31);
+        margin: 0 0 15px 0;
+        padding-top: 10%;
+    }
+    .gray .million{
+        font-size: 1.4em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 35px;
+        color: grey;
+        text-align: center;
+        margin: 0;
+    }
+    .gray button{
+        width: 40%;
+        margin: 5% 30%;
+        border-radius: 5px;
+        padding: 24px;
+        background-color: white;
+        color: #192592;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .gray .grid{
+        margin-top: 0%;
+        padding-bottom: 6%;
+        display: grid;
+        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(3, auto);
+    }
+    .gray .grid img{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 70%;
+        height: auto;
+    }
+    .gray2{
+        margin: 5% 30px;
+        display: grid;
+        grid-template-areas: 
+        "try try input button"
+        "already already input button";
+    }
+    .gray2 .try{
+        grid-area: try;
+        display: flex;
+        align-items: flex-end;
+    }
+    .gray2 .already{
+        grid-area: already;
+        display: flex;
+        align-items: flex-start;
+    }
+    .gray2 input{
+        grid-area: input;
+        display: flex;
+        align-items: center;
+        margin: 18% 6%;
+        padding-left: 5%;
+    }
+    .gray2 button{
+        grid-area: button;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 18% 6%;
+    }
+    .gray2 .try{
+        font-family: 'Times New Roman', Times, serif;        
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0;
+    }
+    .gray2 .already{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .gray2 input{
+        width: auto;
+        border-radius: 5px;
+        border: 2px solid #f4f3f4;
+    }
+    .gray2 input::placeholder{
+        font-size: 1.5em;
+    }
+    .gray2 button{
+        width: auto;
+        padding: 24px;
+        border-radius: 5px;
+        background-color: #192592;
+        color: white;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    /* Aquí la parte 4 */
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 3% 0px;
+    }
+    .foot img{
+        width: 7em;
+    }
+    .foot ul{
+        padding: 0px;
+    }
+    .foot ul li:first-child{
+        font-weight: bold;
+    }
+    .foot ul li{
+        list-style: none;
+        line-height: 45px;
+    }
+    .foot{
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1.1em;
+    }
+
+    .last{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: #F4F3F4;
+        padding: 2% 0px;
+    }
+    .last ul{
+        grid-column: 1/3;
+        list-style: none;
+        display: flex;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1em;
+        font-weight: bold;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .final{
+        grid-column: 4/6;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .final1{
+        display: flex;
+        justify-items: center;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .final1 img{
+        width: 1.8em;
+    }
+    .final1 span{
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .final2{
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #5b5e6d;
+        font-size: 1em;
+    }
+}
+
+/* Cuarta pantalla */
+
+@media (min-width: 1025px) {
+    nav{
+        display: grid;
+        grid-template-areas: "img ul";
+        align-items: center;
+        padding: 0px 10px;
+        border-bottom: 1px solid #dfdfdf;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+    }
+    nav img{
+        grid-area: img;
+        display: flex;
+        justify-content: flex-start;
+        width: 140px;
+        height: 70px;
+        padding-left: 12%;
+    }
+    nav ul{
+        grid-area: ul;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 10% 0px 15%;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: gray;
+    }
+    nav ul li:last-child{
+        border: 2px solid gray;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .fa-times{
+        font-size: 40px;
+        color: gray;
+        margin: 20px;
+        padding-right: 5%;
+    }
+    .fa-bars{
+        display: none;
+    }
+    .fa-times{
+        display: none;
+    }
+    body{
+        margin: 0px;
+    }
+    /* Aquí la parte 2 */
+    header{
+        margin-top: 130px;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-areas: 
+        "img h1"
+        "img text"
+        "img button"
+        "img already";
+        grid-template-columns: 1fr 1fr;
+    }
+    header h1{
+        grid-area: h1;
+        font-size: 5em;
+        line-height: 65px;
+        color: #2C303F;
+        margin-bottom: 0px;
+    }
+    header p{
+        grid-area: text;
+        font-size: 1.4em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 35px;
+        color: #5b5e6d;
+        margin: 0px;
+    }
+    header input{
+        display: none;
+    }
+    header button{
+        grid-area: button;
+        width: 35%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 0px;
+        background-color: #192592;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    header .already{
+        grid-area: already;
+        font-size: 1.5em;
+        margin: 0px;
+    }
+    header img{
+        grid-area: img;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        margin: 15% 0px;
+    }
+    /* Aquí la parte 3 */
+    main{
+        border-bottom: 1px solid #dfdfdf;
+    }
+    .background{
+        background-color: #F4F3F4;
+        border-top: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+    }
+    main .gray{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .gray h2{
+        text-align: center;
+        font-size: 2.5em;
+        color: rgb(26, 28, 31);
+        margin: 0 0 15px 0;
+        padding-top: 10%;
+    }
+    .gray .million{
+        font-size: 1.4em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 35px;
+        color: grey;
+        text-align: center;
+        margin: 0;
+    }
+    .gray button{
+        width: 25%;
+        margin: 5% 38%;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: white;
+        color: #192592;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .gray .grid{
+        margin-top: 0%;
+        padding-bottom: 6%;
+        display: grid;
+        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(3, auto);
+    }
+    .gray .grid img{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 70%;
+        height: auto;
+    }
+    .gray2{
+        margin: 5% 30px;
+        display: grid;
+        grid-template-areas: 
+        "try try input button"
+        "already already input button";
+    }
+    .gray2 .try{
+        grid-area: try;
+        display: flex;
+        align-items: flex-end;
+    }
+    .gray2 .already{
+        grid-area: already;
+        display: flex;
+        align-items: flex-start;
+    }
+    .gray2 input{
+        display: none;
+    }
+    .gray2 button{
+        grid-area: button;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 18% 15%;
+    }
+    .gray2 .try{
+        font-family: 'Times New Roman', Times, serif;        
+        font-weight: bold;
+        font-size: 2em;
+        margin: 0;
+    }
+    .gray2 .already{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .gray2 input{
+        width: auto;
+        border-radius: 5px;
+        border: 2px solid #f4f3f4;
+    }
+    .gray2 input::placeholder{
+        font-size: 1.5em;
+    }
+    .gray2 button{
+        width: auto;
+        padding: 24px;
+        border-radius: 5px;
+        background-color: #192592;
+        color: white;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    /* Aquí la parte 4 */
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin: 7% 0px;
+    }
+    .foot img{
+        width: 7em;
+    }
+    .foot ul{
+        padding: 0px;
+    }
+    .item1{
+        grid-column: 3;
+    }
+    .foot ul li:first-child{
+        font-weight: bold;
+    }
+    .foot ul li{
+        list-style: none;
+        line-height: 45px;
+    }
+    .foot{
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1.1em;
+    }
+
+    .last{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        background-color: #F4F3F4;
+        padding: 2% 2%;
+    }
+    .last ul{
+        grid-column: 1/3;
+        list-style: none;
+        display: flex;
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1em;
+        font-weight: bold;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .final{
+        grid-column: 6/8;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .final1{
+        display: flex;
+        justify-items: center;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .final1 img{
+        width: 1.8em;
+    }
+    .final1 span{
+        font-family: 'Arial', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #5b5e6d;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .final2{
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #5b5e6d;
+        font-size: 1em;
     }
 }
